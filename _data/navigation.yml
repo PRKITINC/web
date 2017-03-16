@@ -1,20 +1,20 @@
-- name: Pricing
+- name: Features
   link: /pricing/
   new_window: false
-  highlight: false
-- name: About
+  media-highlight: true
+- name: Learn More
   link: /about/
   new_window: false
   highlight: false
-- name: Contact
+- name: Contact Us
   link: /contact/
   new_window: false
   highlight: false
-- name: List Your Spot
+- name: Register Stall
   link: /
   new_window: true
   highlight: true
-- name: Sign Up
+- name: Login
   link: /
   new_window: true
   highlight: true
