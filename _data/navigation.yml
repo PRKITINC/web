@@ -2,7 +2,7 @@
   link: /pricing/
   new_window: false
   media-highlight: true
-- name: Learn More
+- name: Who We Are
   link: /about/
   new_window: false
   highlight: false
@@ -11,8 +11,8 @@
   new_window: false
   highlight: false
 - name: Register Stall
-  link: /
-  new_window: true
+  link: /register/
+  new_window: false
   highlight: true
 - name: Login
   link: /

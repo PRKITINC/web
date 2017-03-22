@@ -469,6 +469,13 @@ nav {
       nav a.highlight:hover {
         background: #fff;
         color: #70c041; } }
+  @media (min-width: 620px) {
+    nav a.media-highlight {
+      border: 1px #ccc solid;
+      border-radius: 5px; }
+      nav a.media-highlight:hover {
+        background: #fff;
+        color: #70c041; } }
   nav a.active {
     color: #fff; }
 

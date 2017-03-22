@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/about/</loc>
+<loc>https://proud-alligator.cloudvent.net/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact-success/</loc>
+<loc>https://proud-alligator.cloudvent.net/contact-success/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact/</loc>
+<loc>https://proud-alligator.cloudvent.net/contact/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://proud-alligator.cloudvent.net/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/pricing/</loc>
+<loc>https://proud-alligator.cloudvent.net/pricing/</loc>
+</url>
+<url>
+<loc>https://proud-alligator.cloudvent.net/register/</loc>
 </url>
 </urlset>

@@ -72,6 +72,19 @@ nav {
 		}
 	}
 
+	@media #{$mid-point} {
+		a.media-highlight {
+			
+			border: 1px #ccc solid;
+			border-radius: 5px;
+
+			&:hover {
+				background: #fff;
+				color: $brand-color;
+			}
+		}
+	}
+
 	a.active {
 		color: #fff;
 	}
