@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="/css/screen.css">
 	<link rel="icon" type="image/png" href="/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/5.11/video.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
 </head>
 	<body>
 		<header>
@@ -14,13 +17,40 @@
 				<div class="company-name"><a href="/"><img src="/images/logo.svg" alt="Hydra Logo" width="250" height="60" /></a></div>
 				<nav>
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	
-		
-		
-		
-		
-		<a href="/pricing/
-" class=" media-highlight" >Features</a>
+	<a id="myBtn" class="media-highlight">Features</a>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="videocontent">
+				<video id="my-player" class="video-js vjs-default-skin vjs-big-play-centered vjs-16-9" controls preload="auto" poster="my_video_poster.png" data-setup="{}">
+					<source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+					<source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+					<source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+				</video>
+			</div>
+		</div>
+	</div>
+<script>
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	span.onclick = function() {
+		modal.style.display = "none";
+		var vid = document.getElementById("my-player");
+		vid.pause();
+	}
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+			var vid = document.getElementById("my-player");
+			vid.pause();
+		}
+	}
+</script>
+
 	
 		
 		
@@ -64,24 +94,24 @@
 			<ul class="staff">
 	
 		<li>
-			<div class="square-image"><img src="https://source.unsplash.com/collection/139386/602x602?a=.png
-" alt="Betty Jefferson"/></div>
-			<div class="name"><a target="_blank" href="">Betty Jefferson</a></div>
-			<div class="position">Developer</div>
+			<div class="square-image"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/r90/16112662_10207480126913891_6979568742581890447_o.jpg?oh=5e19a4c094c824a256f15d31119b1025&oe=595807AA
+" alt="Leo Screen"/></div>
+			<div class="name"><a target="_blank" href="">Leo Screen</a></div>
+			<div class="position">CEO</div>
 		</li>
 	
 		<li>
-			<div class="square-image"><img src="https://source.unsplash.com/collection/139386/603x603?a=.png
-" alt="Gerald Freeman"/></div>
-			<div class="name"><a target="_blank" href="">Gerald Freeman</a></div>
-			<div class="position">Sales</div>
+			<div class="square-image"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/12246771_10208599729127146_7724322050895598097_n.jpg?oh=9995bc58ecaa405ea99a903fdaae1160&oe=59260AE5
+" alt="Erik Rogne"/></div>
+			<div class="name"><a target="_blank" href="C">Erik Rogne</a></div>
+			<div class="position">CFO</div>
 		</li>
 	
 		<li>
-			<div class="square-image"><img src="https://source.unsplash.com/collection/139386/604x604?a=.png
-" alt="James Lopez"/></div>
-			<div class="name"><a target="_blank" href="">James Lopez</a></div>
-			<div class="position">Developer</div>
+			<div class="square-image"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/12227143_1041144479250288_6551249150146061139_n.jpg?oh=d743e4dbe661c999c075d6ed7cef469c&oe=59716C6C
+" alt="Peyton Cross"/></div>
+			<div class="name"><a target="_blank" href="">Peyton Cross</a></div>
+			<div class="position">CTO</div>
 		</li>
 	
 		<li>
@@ -92,17 +122,24 @@
 		</li>
 	
 		<li>
-			<div class="square-image"><img src="https://source.unsplash.com/collection/139386/605x605?a=.png
-" alt="Robin Herrera"/></div>
-			<div class="name"><a target="_blank" href="">Robin Herrera</a></div>
-			<div class="position">CEO</div>
+			<div class="square-image"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/16707507_265320040565594_7505125006291899525_o.jpg?oh=0949633e50e5ce4f283ab7f824425f0e&oe=59652FD6
+" alt="Eli Shumway"/></div>
+			<div class="name"><a target="_blank" href="">Eli Shumway</a></div>
+			<div class="position">Public Relations Coordinator</div>
 		</li>
 	
 		<li>
-			<div class="square-image"><img src="https://source.unsplash.com/collection/139386/600x600?a=.png
-" alt="Tom Wilson"/></div>
-			<div class="name"><a target="_blank" href="">Tom Wilson</a></div>
-			<div class="position">CTO</div>
+			<div class="square-image"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/13319909_1124444777607032_5838631626217667557_n.jpg?oh=06d831265aa5d3a3f5447926b2a0be6e&oe=594FD93C
+" alt="Lauren Kenes"/></div>
+			<div class="name"><a target="_blank" href="">Lauren Kenes</a></div>
+			<div class="position">Marketing Manager</div>
+		</li>
+	
+		<li>
+			<div class="square-image"><img src="http://www.porcelaingres.com/img/collezioni/JUST-GREY/big/just_grey_light_grey.jpg
+" alt="Ali Ali-Tamimi"/></div>
+			<div class="name"><a target="_blank" href="">Ali Ali-Tamimi</a></div>
+			<div class="position">Administrative Coordinator</div>
 		</li>
 	
 </ul>

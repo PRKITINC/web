@@ -1,7 +1,3 @@
-- name: Features
-  link: /pricing/
-  new_window: false
-  media-highlight: true
 - name: Who We Are
   link: /about/
   new_window: false

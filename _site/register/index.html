@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="/css/screen.css">
 	<link rel="icon" type="image/png" href="/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/5.11/video.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
 </head>
 	<body>
 		<header>
@@ -14,13 +17,40 @@
 				<div class="company-name"><a href="/"><img src="/images/logo.svg" alt="Hydra Logo" width="250" height="60" /></a></div>
 				<nav>
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	
-		
-		
-		
-		
-		<a href="/pricing/
-" class=" media-highlight" >Features</a>
+	<a id="myBtn" class="media-highlight">Features</a>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="videocontent">
+				<video id="my-player" class="video-js vjs-default-skin vjs-big-play-centered vjs-16-9" controls preload="auto" poster="my_video_poster.png" data-setup="{}">
+					<source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+					<source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+					<source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+				</video>
+			</div>
+		</div>
+	</div>
+<script>
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	span.onclick = function() {
+		modal.style.display = "none";
+		var vid = document.getElementById("my-player");
+		vid.pause();
+	}
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+			var vid = document.getElementById("my-player");
+			vid.pause();
+		}
+	}
+</script>
+
 	
 		
 		
@@ -57,13 +87,11 @@
 		<div class="content">
 	<section class="page">
 		<div class="container ">
-				<h2>Registration</h2>
+				<h2>Sign Up</h2>
 			
-				<p class="subtext">List your spot here!</p>
+				<p class="subtext">Register here!</p>
 			
-			<body>
-    <h1>Sign up</h1>
-    <p>Register here</p>
+			<div class="contact-box">
     <form id="input">
         <h4>Username: </h4><input type="text" name="username" value="" required> <br>
         <h4>Password</h4>
@@ -87,9 +115,26 @@
         <h4>Zip Code</h4>
         <input type="number" name="zipcode" value="" required> <br>
     </form>
-    <button type="button" id="myButton"> Submit2</button>
-    <script src="register.js"></script>
-</body>
+    <button type="button" id="myButton"> Submit </button>
+    <script>
+    $(document).ready(function() {
+      console.log("ready")
+      $("#myButton").click(function(){
+        console.log("success")
+        let form = document.getElementById("input")
+        if (form.elements[1].value != form.elements[2].value) {
+            alert("Passwords do not match!")
+        } else {
+            $.post("http://162.243.143.124/user/register", $('form').serialize())
+            .done((data) => {
+              window.location.href = "http://www.google.com";
+              alert(data);
+            })
+        }
+      })
+    });
+    </script>
+</div>
 
 		</div>
 	</section>

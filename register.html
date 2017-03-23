@@ -1,10 +1,8 @@
 ---
-title: Registration
-description: List your spot here!
+title: Sign Up
+description: Register here!
 ---
-<body>
-    <h1>Sign up</h1>
-    <p>Register here</p>
+<div class="contact-box">
     <form id="input">
         <h4>Username: </h4><input type="text" name="username" value="" required> <br>
         <h4>Password</h4>
@@ -28,6 +26,23 @@ description: List your spot here!
         <h4>Zip Code</h4>
         <input type="number" name="zipcode" value="" required> <br>
     </form>
-    <button type="button" id="myButton"> Submit2</button>
-    <script src="register.js"></script>
-</body>
+    <button type="button" id="myButton"> Submit </button>
+    <script>
+    $(document).ready(function() {
+      console.log("ready")
+      $("#myButton").click(function(){
+        console.log("success")
+        let form = document.getElementById("input")
+        if (form.elements[1].value != form.elements[2].value) {
+            alert("Passwords do not match!")
+        } else {
+            $.post("http://162.243.143.124/user/register", $('form').serialize())
+            .done((data) => {
+              window.location.href = "http://www.google.com";
+              alert(data);
+            })
+        }
+      })
+    });
+    </script>
+</div>
