@@ -35,8 +35,7 @@
 	color: #F3F3F3;
 	text-align: center;
 	background: linear-gradient(to bottom, $middle-gradient-color 0%, $secondary-brand-color 100%) no-repeat #a05fb7;
-	padding-top: 50px;
-	padding-bottom: 100px;
+	min-height: 250px;
 
 	p {
 		color: #fff;
@@ -60,4 +59,72 @@
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}
+}
+
+.the-arrow {
+    position: absolute;
+    width: 48px;
+    height: 15px;
+    background: url("https://www.snapchat.com/static/style-guide/home/images/caret.svg") no-repeat center center;
+    background-size: 48px 15px;
+		bottom: 48px;
+    left: 50%;
+    margin-left: -34px;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: content-box;
+    z-index: 1;
+    display: block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: bounce 2.5s infinite;
+    animation: bounce 2.5s infinite;
+    -webkit-transition-property: bottom;
+    transition-property: bottom;
+    -webkit-transition-duration: 500ms, 500ms;
+    transition-duration: 500ms, 500ms;
+    -webkit-transition-delay: 0, 500ms;
+    transition-delay: 0, 500ms;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1), linear;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1), linear
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+
+    15% {
+        -webkit-transform: translateY(-10px)
+    }
+
+    30% {
+        -webkit-transform: translateY(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    15% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    30% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
 }
