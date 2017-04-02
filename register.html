@@ -36,9 +36,9 @@ description: Register here!
         if (form.elements[1].value != form.elements[2].value) {
             alert("Passwords do not match!")
         } else {
-            $.post("http://162.243.143.124/user/register", $('form').serialize())
+            $.post("http://162.243.143.124/user/register", $('form').serialize());
+            window.location.href = "http://www.google.com";
             .done((data) => {
-              window.location.href = "http://www.google.com";
               alert(data);
             })
         }
