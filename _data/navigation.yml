@@ -6,11 +6,11 @@
   link: /contact/
   new_window: false
   highlight: false
-- name: Register Stall
-  link: /register/
-  new_window: false
-  highlight: true
 - name: Login
   link: /
   new_window: true
+  highlight: false
+- name: Register Stall
+  link: /register/
+  new_window: false
   highlight: true
