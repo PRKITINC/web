@@ -2,6 +2,7 @@
 title: Sign Up
 description: Register here!
 ---
+<script src="index.js"></script>
 <div class="contact-box">
     <form id="input">
         <h4>Username: </h4><input type="text" name="username" value="" required> <br>
@@ -27,22 +28,4 @@ description: Register here!
         <input type="number" name="zipcode" value="" required> <br>
     </form>
     <button type="button" id="myButton"> Submit </button>
-    <script>
-    $(document).ready(function() {
-      console.log("ready")
-      $("#myButton").click(function(){
-        console.log("success")
-        let form = document.getElementById("input")
-        if (form.elements[1].value != form.elements[2].value) {
-            alert("Passwords do not match!")
-        } else {
-            $.post("http://162.243.143.124/user/register", $('form').serialize());
-            window.location.href = "http://www.google.com";
-            .done((data) => {
-              alert(data);
-            })
-        }
-      })
-    });
-    </script>
 </div>
