@@ -89,4 +89,4 @@ $(document).ready(function() {
 
 });
 
-//going to add parallax underneath this comment
+//all parallax code is underneath this comment
