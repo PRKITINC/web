@@ -14,11 +14,6 @@ description:
 	</div>
 	<span class="the-arrow"></span>
 </section>
-<script>
-$(window).resize(function() {
-    $('.hero').height($(window).height()-295);
-}).resize();
-</script>
 <div class="content">
 	<section>
 		<div class="container flex">
@@ -53,45 +48,6 @@ $(window).resize(function() {
 	</section>
 
 <section class="press">
-	<script>
-	$(document).ready(function() {
-    $(".press .press-link").on("click", function() {
-        var t = $(this).data("target");
-        $(".press .press-link").removeClass("active"), $(this).addClass("active"), $(".press .content p").removeClass("active"), $(".press .content p." + t).addClass("active")
-    })
-	});
-
-	$(document).ready(function() {
-    $(".testimonial-cards, .press-links-mobile").slick({
-        dots: !0,
-        infinite: !0,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: !0,
-                dots: !0
-            }
-        }, {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
-    })
-})
-	</script>
 	<ul class="press-links">
     <li class='press-link new-york-times-link active' data-target='new-york-times'><img src="/images/new_york_times_logo-ef91a11ee6e49a0459430863db69c29924e8170a190bf33c72e0620b354496b6.png" alt="New york times logo" /></li>
     <li class='press-link gq-link' data-target='gq'><img src="/images/gq_logo-e2d20c7960646256ad4a20828170270669b6e4f85de89ebf625aa86c11e1929c.png" alt="Gq logo" /></li>
