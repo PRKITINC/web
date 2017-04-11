@@ -8,16 +8,15 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="//vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
-	<script src="//vjs.zencdn.net/5.11/video.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="index.js"></script>
 </head>
 	<body>
 		<header>
 			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Hydra Logo" width="250" height="60" /></a></div>
+				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Hydra Logo" width="250" height="30" /></a></div>
 				{% include navigation.html %}
 			</div>
 		</header>
@@ -42,11 +41,5 @@
 			</div>
 			</div>
 		</footer>
-		<script>
-			document.getElementById("open-nav").onclick = function () {
-				document.body.classList.toggle("nav-open");
-				return false;
-			};
-		</script>
 	</body>
 </html>

@@ -1,15 +1,19 @@
-- name: Who We Are
-  link: /about/
+- name: Beta Testing
+  link: /beta/
+  new_window: false
+  highlight: false
+- name: Our Cause
+  link: /cause/
   new_window: false
   highlight: false
 - name: Contact Us
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
+#- name: Sign In
+#  link: /
+#  new_window: true
+#  highlight: false
 - name: Register Stall
   link: /register/
   new_window: false

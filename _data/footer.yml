@@ -1,17 +1,13 @@
 - links:
-  - name: Pricing
-    link: /pricing/
-  - name: About
-    link: /about/
-  - name: Contact
-    link: /contact/
+  - name: Beta Testing
+    link: /beta/
+  - name: Our Cause
+    link: /cause/
 - links:
-  - name: Login
-    link: /
-    new_window: true
-  - name: Sign Up
-    link: /
-    new_window: true
+  - name: Contact Us
+    link: /contact/
+  - name: Register Stall
+    link: /register/
 #- links:
 #  - name: Facebook
 #    link: https://facebook.com
