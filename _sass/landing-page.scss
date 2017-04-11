@@ -19,9 +19,8 @@
 		max-width: 750px;
 		width: 98%;
 		margin: 0 auto;
-
 		@media #{$tablet} {
-			@include flexbox;
+			 @include flexbox;
 
 			blockquote {
 				-webkit-flex: 1;
@@ -30,17 +29,18 @@
 		}
 	}
 }
-
 @media #{$desktop} {
 	.flex {
 		@include flexbox;
 		align-items: center;
 		flex-direction: row;
 
-		.text, .image, .button, .alt{
+		.alt,
+		.button,
+		.image,
+		.text {
 			-webkit-flex: 1;
 			flex: 1;
-
 		}
 	}
 
@@ -60,263 +60,281 @@
 	}
 }
 
-.two{
-	background-color: #eeeeee
+.two {
+	background-color: #eeeeee;
 }
-
 /* this shit is all for the arrow at the top */
-
 .the-arrow {
-    position: absolute;
-    width: 48px;
-    height: 15px;
-    background: url("https://www.snapchat.com/static/style-guide/home/images/caret.svg") no-repeat center center;
-    background-size: 48px 15px;
-		bottom: 48px;
-    left: 50%;
-    margin-left: -34px;
-    cursor: pointer;
-    padding: 10px;
-    box-sizing: content-box;
-    z-index: 1;
-    display: block;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-animation: bounce 2.5s infinite;
-    animation: bounce 2.5s infinite;
-    -webkit-transition-property: bottom;
-    transition-property: bottom;
-    -webkit-transition-duration: 500ms, 500ms;
-    transition-duration: 500ms, 500ms;
-    -webkit-transition-delay: 0, 500ms;
-    transition-delay: 0, 500ms;
-    -webkit-transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-    transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+	position: absolute;
+	width: 48px;
+	height: 15px;
+	background: url("https://www.snapchat.com/static/style-guide/home/images/caret.svg") no-repeat center center;
+	background-size: 48px 15px;
+	bottom: 48px;
+	left: 50%;
+	margin-left: -34px;
+	cursor: pointer;
+	padding: 10px;
+	box-sizing: content-box;
+	z-index: 1;
+	display: block;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: bounce 2.5s infinite;
+	animation: bounce 2.5s infinite;
+	-webkit-transition-property: bottom;
+	transition-property: bottom;
+	-webkit-transition-duration: 500ms, 500ms;
+	transition-duration: 500ms, 500ms;
+	-webkit-transition-delay: 0, 500ms;
+	transition-delay: 0, 500ms;
+	-webkit-transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+	transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
-
 @-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translateY(0)
-    }
+	0% {
+		-webkit-transform: translateY(0);
+	}
 
-    15% {
-        -webkit-transform: translateY(-10px)
-    }
+	15% {
+		-webkit-transform: translateY(-10px);
+	}
 
-    30% {
-        -webkit-transform: translateY(0)
-    }
+	30% {
+		-webkit-transform: translateY(0);
+	}
 
-    100% {
-        -webkit-transform: translateY(0)
-    }
+	100% {
+		-webkit-transform: translateY(0);
+	}
 }
-
 @keyframes bounce {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
 
-    15% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px)
-    }
+	15% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
 
-    30% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
+	30% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
 
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
 }
-
-
 /* this shit is all for the press section */
-
 .press {
-    padding: 10em 0 2em 0;
-    background-color: white
+	padding: 10em 0 2em;
+	background-color: white;
 }
-
 @media (max-width: 767px) {
-    .press {
-        padding: 4em 0 5em 0
-    }
+	.press {
+		padding: 4em 0 5em;
+	}
 }
 
 .press .content-wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    height: 200px;
-    color: #253040;
-    background-color: white
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	height: 200px;
+	color: #253040;
+	background-color: white;
 }
 
 .press .apartment-therapy {
-    display: none
+	display: none;
 }
 
 .press .content {
-    padding: 0 20px;
-    text-align: center
+	padding: 0 20px;
+	text-align: center;
 }
 
 .press .content p {
-    display: none;
-    padding-top: 12px;
-    padding-bottom: 0
+	display: none;
+	padding-top: 12px;
+	padding-bottom: 0;
 }
 
 .press .content p.active {
-    display: block
+	display: block;
 }
 
 .press .press-links {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    background-color: white;
-    border-bottom: 1px solid whitesmoke
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	background-color: white;
+	border-bottom: 1px solid whitesmoke;
 }
 
 .press .press-links .press-link {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 33.33%;
-    -moz-flex-basis: 33.33%;
-    flex-basis: 33.33%;
-    -ms-flex-preferred-size: 33.33%;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    padding: 10px;
-    background-color: white;
-    cursor: pointer;
-    transition: all 250ms
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-basis: 33.33%;
+	-moz-flex-basis: 33.33%;
+	flex-basis: 33.33%;
+	-ms-flex-preferred-size: 33.33%;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	-ms-flex-align: center;
+	padding: 10px;
+	background-color: white;
+	cursor: pointer;
+	transition: all 250ms;
 }
 
 .press .press-links .press-link img {
-    opacity: 0.3;
-    transition: all 250ms
+	opacity: 0.3;
+	transition: all 250ms;
 }
 
 .press .press-links .press-link.apartment-therapy-link {
-    display: none;
+	display: none;
 }
 
 .press .press-links .press-link.active {
-    background-color: white;
-    border-bottom: 2px solid
+	background-color: white;
+	border-bottom: 2px solid;
 }
 
 .press .press-links .press-link.active img {
-    opacity: 1
+	opacity: 1;
 }
 
 .press .press-links .new-york-times-link img {
-    height: 13px
+	height: 13px;
 }
 
 .press .press-links .gq-link img {
-    height: 17px
+	height: 17px;
 }
 
 .press .press-links .cool-hunting-link img {
-    width: 88px
+	width: 88px;
+}
+@media (min-width: 768px) {
+	.press .content-wrapper {
+		height: 325px;
+	}
+
+	.press .content {
+		width: 400px;
+	}
+
+	.press .press-links {
+		-webkit-box-align: center;
+		-moz-box-align: center;
+		box-align: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		-ms-flex-align: center;
+	}
+
+	.press .press-links .new-york-times-link img {
+		width: auto;
+		height: auto;
+	}
+
+	.press .press-links .gq-link img {
+		width: auto;
+		height: auto;
+	}
+
+	.press .press-links .cool-hunting-link img {
+		opacity: 0.3;
+		width: auto;
+		height: auto;
+	}
+
+	.press .press-link {
+		height: 90px;
+	}
+}
+// Parallax
+.parallax-container {
+	position: relative;
+	overflow: hidden;
+	height: 500px;
 }
 
-@media (min-width: 768px) {
-    .press .content-wrapper {
-        height: 325px
-    }
+.parallax {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
 
-    .press .content {
-        width: 400px
-    }
-
-    .press .press-links {
-        -webkit-box-align: center;
-        -moz-box-align: center;
-        box-align: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -o-align-items: center;
-        align-items: center;
-        -ms-flex-align: center
-    }
-
-    .press .press-links .new-york-times-link img {
-			width: auto;
-			height: auto;
-    }
-
-    .press .press-links .gq-link img {
-        width: auto;
-				height: auto;
-    }
-
-    .press .press-links .cool-hunting-link img {
-        opacity: 0.3;
-        width: auto;
-        height: auto;
-    }
-
-    .press .press-link {
-        height: 90px
-    }
+	img {
+		display: none;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		transform: translateX(-50%);
 	}
+}
