@@ -91,6 +91,10 @@
 
 .section-title{
 	text-align: center;
+	padding-bottom: 10px;
+	@media #{$tablet} {
+ 	padding-bottom: 30px;
+ 	}
 }
 
 .flex-section{
@@ -100,7 +104,7 @@
 	list-style: none;
 	-webkit-align-items: center;
 	align-items: center;
-	@media #{$desktop} {
+	@media #{$tablet} {
  		-webkit-flex-flow: row wrap;
  		justify-content: space-around;
  	}
@@ -108,22 +112,14 @@
 }
 
 .flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-
-  line-height: 150px;
-  color: white;
   text-align: center;
+	p {
+		font-size: 16px
+	}
 }
 
 .how-it-works-icons {
-	width: 50px;
-	@media #{$tablet} {
-		width: 75px;
-	}
+	width: 100px;
 	@media #{$mid-point} {
 		width: 100px;
 	}
