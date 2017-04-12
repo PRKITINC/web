@@ -72,7 +72,7 @@
 	position: absolute;
 	width: 48px;
 	height: 15px;
-	background: url("https://www.snapchat.com/static/style-guide/home/images/caret.svg") no-repeat center center;
+	background: url("../images/hero/caret.svg") no-repeat center center;
 	background-size: 48px 15px;
 	bottom: 48px;
 	left: 50%;
@@ -344,7 +344,7 @@ $normal-img:"https://lh4.googleusercontent.com/-3eBjuQpOGFw/U47yh_-OycI/AAAAAAAA
 $blurred-img:"https://lh3.googleusercontent.com/-m8TxQMObg6c/U474EWu7Y9I/AAAAAAAAI2k/xkRGoIEC1iU/s1600/blur.jpg";
 
 .blurred-bg{
-	background-image:url(../images/green.jpg);
+	background-image:url(../images/how-it-works/green.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -353,4 +353,8 @@ $blurred-img:"https://lh3.googleusercontent.com/-m8TxQMObg6c/U474EWu7Y9I/AAAAAAA
 	p{
 		color: #fff
 	}
+}
+
+#driveway-icon{
+	width: 50px
 }

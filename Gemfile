@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '3.3.1'
-gem 'compass', '0.12.7'
 
 group :jekyll_plugins do
 	gem 'jekyll-archives', '2.1.1'
