@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     //this is for the hero section
     $(window).resize(function() {
-        $('.hero').height($(window).height() - 195);
+        $('.hero').height($(window).height() - 170);
     }).resize();
 
     //for the press-links
