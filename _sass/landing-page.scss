@@ -7,6 +7,12 @@
 	p {
 		color: #fff;
 	}
+
+	.under-logo {
+		margin-top: 100px;
+		text-align: center;
+		align-items: center;
+	}
 }
 
 /* this shit is all for the arrow at the top */
@@ -77,8 +83,9 @@
 }
 
 //this is for the how it works section
-.blurred-bg{
-	background-image:url(../images/how-it-works/green.jpg);
+.how-it-works-blurred-bg{
+	background-image:url(../images/how-it-works/bg.png);
+	background-position: center;
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -102,8 +109,8 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	-webkit-align-items: center;
-	align-items: center;
+	-webkit-align-items: baseline;
+	align-items: baseline;
 	@media #{$tablet} {
  		-webkit-flex-flow: row wrap;
  		justify-content: space-around;
@@ -125,6 +132,52 @@
 	}
 	@media #{$desktop} {
 		width: 125px;
+	}
+}
+
+//this is for the relax section title
+.two{
+	height: 500px;
+	background-image:url(../images/relax/house.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: #fff;
+	height: background-image-height();
+	padding-bottom: 25px;
+}
+
+.overlaid-text {
+	position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+.overlaid-text span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+h2 span.spacer {
+   padding:0 5px;
+}
+
+//for the save the planet section
+.save-the-planet-blurred-bg{
+	background-image:url(../images/save-the-planet/green.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+
+	p{
+		color: #fff
 	}
 }
 

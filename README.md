@@ -2,7 +2,7 @@
 
 ## Develop
 
-PRKIT's front-end was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, and based on the Hydra template.
+PRKIT's front-end was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, and very loosely based on the Hydra template.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 

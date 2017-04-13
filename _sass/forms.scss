@@ -26,6 +26,19 @@
 	color: $brand-color;
 }
 
+.button.relax a {
+	color: $brand-color;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid $brand-color;;
+	padding: 16px 50px;
+}
+
+.button.relax a:hover {
+	background:$brand-color;
+	color: #fff;
+}
+
 textarea, input, button, select { font-family: inherit; font-size: inherit; }
 
 input[type=submit] {
