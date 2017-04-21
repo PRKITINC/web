@@ -88,5 +88,3 @@ $(document).ready(function() {
     })
 
 });
-
-//all parallax code is underneath this comment

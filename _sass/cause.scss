@@ -1,0 +1,23 @@
+.cause-section {
+  background-image: url(../images/cause/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+	h1{
+		color: $brand-color;
+	}
+}
+
+.cause-box {
+  max-width: 500px;
+  height: auto;
+	background-color: #fff;
+	opacity: 0.6;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+}
