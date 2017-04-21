@@ -1,8 +1,10 @@
 .hero {
-	color: #F3F3F3;
-	text-align: center;
-	background: linear-gradient(to bottom, $middle-gradient-color 0%, $secondary-brand-color 100%) no-repeat #a05fb7;
-	min-height: 350px;
+	background-image:url(../images/hero/bg.jpg);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFF;
 
 	p {
 		color: #fff;
@@ -17,31 +19,34 @@
 
 /* this shit is all for the arrow at the top */
 #the-arrow {
-	position: absolute;
-	width: 48px;
-	height: 15px;
-	background: url("../images/hero/caret.svg") no-repeat center center;
-	background-size: 48px 15px;
-	bottom: 48px;
-	left: 50%;
-	margin-left: -34px;
-	cursor: pointer;
-	padding: 10px;
-	box-sizing: content-box;
-	z-index: 1;
-	display: block;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	-webkit-animation: bounce 2.5s infinite;
-	animation: bounce 2.5s infinite;
-	-webkit-transition-property: bottom;
-	transition-property: bottom;
-	-webkit-transition-duration: 500ms, 500ms;
-	transition-duration: 500ms, 500ms;
-	-webkit-transition-delay: 0, 500ms;
-	transition-delay: 0, 500ms;
-	-webkit-transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-	transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+	@media #{$mid-point} {
+		position: absolute;
+		width: 48px;
+		height: 15px;
+		background: url("../images/hero/caret.svg") no-repeat center center;
+		background-size: 48px 15px;
+		bottom: 48px;
+		left: 50%;
+		margin-left: -34px;
+		cursor: pointer;
+		padding: 10px;
+		box-sizing: content-box;
+		z-index: 1;
+		display: block;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-animation: bounce 2.5s infinite;
+		animation: bounce 2.5s infinite;
+		-webkit-transition-property: bottom;
+		transition-property: bottom;
+		-webkit-transition-duration: 500ms, 500ms;
+		transition-duration: 500ms, 500ms;
+		-webkit-transition-delay: 0, 500ms;
+		transition-delay: 0, 500ms;
+		-webkit-transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+		transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+	}
+	display: none;
 }
 @-webkit-keyframes bounce {
 	0% {
@@ -83,16 +88,14 @@
 }
 
 //this is for the how it works section
-.how-it-works-blurred-bg{
-	background-image:url(../images/how-it-works/bg.png);
-	background-position: center;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	color: #fff;
+.how-it-works{
+	color: #000;
+	text-align: center;
+	background: #FFF;
+	min-height: 350px;
 
 	p{
-		color: #fff
+		color: #000;
 	}
 }
 
@@ -138,7 +141,7 @@
 //this is for the relax section title
 .two{
 	height: 500px;
-	background-image:url(../images/relax/house.png);
+	background-image:url(../images/relax/house.jpg);
 	background-position: center;
 	background-repeat:no-repeat;
 	background-size: cover;
@@ -149,23 +152,35 @@
 }
 
 .overlaid-text {
-	position: absolute;
-  top: 200px;
-  left: 0;
+	position: static;
   width: 100%;
+	text-align: center;
 }
 
 .overlaid-text span {
   color: white;
-  font: bold 24px/45px Helvetica, Sans-Serif;
   letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
 }
 
-h2 span.spacer {
-   padding:0 5px;
+#keep-at-bottom{
+	margin-top: 40%;
+	@media #{$tablet} {
+ 	margin-top: 20%;
+ 	}
+}
+
+/* for the secure and anon section */
+#secure-icon {
+	width: 100px;
+	@media #{$tablet} {
+		width: 125px;
+	}
+	@media #{$desktop} {
+		width: 160px;
+	}
 }
 
 //for the save the planet section
@@ -178,6 +193,25 @@ h2 span.spacer {
 
 	p{
 		color: #fff
+	}
+}
+
+.transparent-box{
+	padding: 2px;
+	background-color: #fff;
+	opacity: 0.6;
+	text-align: center;
+	@media #{$tablet} {
+		padding: 20px;
+	}
+	h2{
+		color: $brand-color;
+		font-weight: 500;
+		padding-top: 5px;
+	}
+	p{
+		padding: 0px 10px;
+		color: #000;
 	}
 }
 
