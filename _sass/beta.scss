@@ -1,0 +1,23 @@
+.two{
+	height: 500px;
+	background-image:url(../images/cause/bg.jpg);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: #fff;
+	height: background-image-height();
+	padding-bottom: 25px;
+}
+
+
+#iphone-beta-image{
+  z-index: 1;
+  padding-top: 30px;
+  float: right;
+  content: "";
+  clear: both;
+  display: table;
+  transform: rotate(-17deg);
+  width: 400px;
+}

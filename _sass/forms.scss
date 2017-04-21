@@ -15,7 +15,7 @@
 }
 
 .button.alt a {
-	background: rgba(255,255,255,0.15);
+	background: $brand-color;
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	padding: 16px 50px;
@@ -26,16 +26,21 @@
 	color: $brand-color;
 }
 
+.button.relax {
+	margin: auto;
+	width: 236px;
+}
+
 .button.relax a {
-	color: $brand-color;
-	background: #fff;
-	border-radius: 10px;
-	border: 1px solid $brand-color;;
-	padding: 16px 50px;
+		background: #fff;
+		color: $brand-color;
+		padding: 16px 50px;
+		border: 1px solid $brand-color;
+		border-radius: 10px;
 }
 
 .button.relax a:hover {
-	background:$brand-color;
+	background: $brand-color;
 	color: #fff;
 }
 
