@@ -2,14 +2,15 @@
   background-image: url(../images/cause/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
   background-attachment: fixed;
 	h1{
 		color: $brand-color;
 	}
 }
 
-.cause-box {
-  max-width: 500px;
+.cause-section-box {
+  width: 500px;
   height: auto;
 	background-color: #fff;
 	opacity: 0.6;
